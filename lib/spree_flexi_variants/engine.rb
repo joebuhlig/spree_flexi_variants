@@ -14,9 +14,7 @@ module SpreeFlexiVariants
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
 
-      Spree::Core::Environment::Calculators.class_eval do
-        attr_accessor :product_customization_types
-      end
+      Spree::Core::Environment::Calculators.attributes << :product_customization_types
     end
 
     config.to_prepare &method(:activate).to_proc
