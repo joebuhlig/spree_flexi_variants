@@ -1,5 +1,5 @@
 module Spree
-  class Calculator::Engraving < Calculator
+  class Calculators::Engraving < Calculators
     preference :price_per_letter, :decimal
     attr_accessible :preferred_price_per_letter
 

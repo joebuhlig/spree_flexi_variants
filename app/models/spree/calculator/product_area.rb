@@ -1,5 +1,5 @@
 module Spree
-  class Calculator::ProductArea < Calculator
+  class Calculators::ProductArea < Calculators
     preference :multiplier, :decimal
 
     preference :min_pricing_area, :integer  # the minimum size we'll use for pricing (we might sell you a 4x4, but we'll charge u for a 10x10

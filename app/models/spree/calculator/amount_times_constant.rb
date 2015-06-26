@@ -1,5 +1,5 @@
 module Spree
-  class Calculator::AmountTimesConstant < Calculator
+  class Calculators::AmountTimesConstant < Calculators
     preference :multiplier, :decimal
 
     preference :min_amount, :integer, :default=>0
