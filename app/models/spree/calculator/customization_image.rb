@@ -1,7 +1,7 @@
 module Spree
-  class Calculators::CustomizationImage < Calculators
+  class Calculator::CustomizationImage < Calculator
     preference :price, :decimal
-    attr_accessible :preferred_price, :decimal
+    # attr_accessible :preferred_price, :decimal
 
     def self.description
       "Product Customization Image Calculator"

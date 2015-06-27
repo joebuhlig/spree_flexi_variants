@@ -1,5 +1,5 @@
 module Spree
-  class Calculators::ProductArea < Calculators
+  class Calculator::ProductArea < Calculator
     preference :multiplier, :decimal
 
     preference :min_pricing_area, :integer  # the minimum size we'll use for pricing (we might sell you a 4x4, but we'll charge u for a 10x10
@@ -10,7 +10,7 @@ module Spree
     preference :min_height, :integer, :default => 0
     preference :max_height, :integer, :default => 100
 
-    attr_accessible :preferred_multiplier, :preferred_min_pricing_area, :preferred_min_width, :preferred_max_width,:preferred_min_height, :preferred_max_height
+    # attr_accessible :preferred_multiplier, :preferred_min_pricing_area, :preferred_min_width, :preferred_max_width,:preferred_min_height, :preferred_max_height
 
     # preference :min_area, :integer  # the minimum sized frame we'll sell
 
