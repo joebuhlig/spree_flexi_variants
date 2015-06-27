@@ -1,4 +1,4 @@
-Spree::Core::Engine.routes.prepend do
+Spree::Core::Engine.add_routes do
   match 'product_customizations/price', :to => 'product_customizations#price'
 
   match 'customize/:product_id', :to => 'products#customize', :as => 'customize'
